@@ -2,6 +2,7 @@
   <head>
     <title>Spoilerproof Support</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,19 +12,38 @@
     <style>
       body {
         font-family: 'Roboto', sans-serif;
-        color: #11181C;
+        color: #11181c;
         background-color: #f3f3f3;
       }
       main {
         padding: 24px;
       }
+      header {
+        display: flex;
+        flex-direction: row;
+        padding: 16px;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+      }
       h1 {
-        text-align: center;
-        font-size: 3rem;
+        text-align: left;
+        font-size: 2.5rem;
       }
       p {
         opacity: 0.8;
         font-size: 1.2rem;
+      }
+      li {
+        opacity: 0.8;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      }
+      .icon {
+        display: block;
+        margin: 0 auto;
+        width: 7rem;
+        height: 7rem;
       }
     </style>
     <script type="text/javascript">
@@ -48,11 +68,20 @@
   </head>
   <body>
     <main>
-      <h1>Spoilerproof Support</h1>
+      <header>
+        <img
+          class="icon"
+          src="https://raw.githubusercontent.com/Spoilerproof/Spoilerproof-Crisp/refs/heads/main/imgs/icon.png"
+        />
+        <h1>Spoilerproof Support</h1>
+      </header>
       <p>Chat with the Spoilerproof team directly.</p>
       <p>
-        Let us know if you want to add new titles, or if you're experiencing
-        issues with spoiler shields.
+        Let us know how you would improve the Spoilerproof app. We can help with:
+        <ul>
+          <li><b>Adding new titles</b> to the Spoiler Engine</li>
+          <li><b>Fixing spoiler blocks</b> if you experience issues</li>
+          <li>Other improvements</li>
       </p>
     </main>
   </body>
